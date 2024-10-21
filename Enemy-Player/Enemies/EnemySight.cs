@@ -55,7 +55,7 @@ public class EnemySight : MonoBehaviour
 
     private bool RaycastOnCollider(int direction) // 0 left, 1 right , 2 up, 3 down
     { // fix this mess later
-        // LOOK AWAY PLEASE
+        // Repeated code will be fixed later (hopefully)
         if (direction == 0)
         {
             Vector3 upCheckLocation = new Vector3(transform.position.x, transform.position.y + capsuleCollider.size.y / 2);
