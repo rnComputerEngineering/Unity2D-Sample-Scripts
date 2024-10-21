@@ -16,7 +16,7 @@ public class PlayerSpawn : MonoBehaviour
         CameraFollow cameraFollow = instantiatedCamera.GetComponent<CameraFollow>();
         if (cameraFollow != null)
         {
-            cameraFollow.setPlayer(instantiatedPlayer);
+            cameraFollow.SetPlayer(instantiatedPlayer);
         }
         else
         {
