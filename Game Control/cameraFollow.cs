@@ -8,7 +8,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Vector3 offset;     
     [SerializeField] private float smoothSpeed = 0.125f;
 
-    public void setPlayer(GameObject playerRef)
+    public void SetPlayer(GameObject playerRef)
     {
         player = playerRef;
         Debug.Log(player);
