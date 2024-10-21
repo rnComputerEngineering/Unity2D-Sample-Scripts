@@ -14,7 +14,7 @@ public class RECircle : Enemy
         }
         else 
         {
-            GetAStarPathToPlayer();
+            GetAStarPathToPlayer(); // Using AStar every frame is inefficent but if the number of enemies is small it is fine
             GoToAStarPath();
         }
     }
