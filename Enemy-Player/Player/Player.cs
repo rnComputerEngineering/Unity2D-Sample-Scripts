@@ -55,15 +55,10 @@ public class Player : Entity
 
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         moveDirection = move.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    }
-
-    void FixedUpdate()
-    {
         rb.velocity = new Vector2(moveDirection.x * GetSpeed(), moveDirection.y * GetSpeed());
         Vector2 characterDirection = mousePosition - (Vector2)(transform.position);
         float characterAngle = Mathf.Atan2(characterDirection.x,characterDirection.y) * Mathf.Rad2Deg;
